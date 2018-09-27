@@ -18,7 +18,7 @@ if __name__ == '__main__' :
     for targetClass in range(nclasses) :
         targetIdx = []
 
-        for i in rage(len(y_train)) :
+        for i in range(len(y_train)) :
             if y_train[i][0] == targetClass :
                 targetIdx.append(i)
 
