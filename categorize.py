@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib.pyplot as pyplot
+import matplotlib.pyplot as plt
 from scipy.misc import toimage
 from keras.datasets import cifar10
 
@@ -24,8 +24,8 @@ if __name__ == '__main__' :
 
         np.random.shuffle(targetIdx)
 
-        for idx in target[:10]:
-            img = toimage(X_train(idx))
+        for idx in targetIdx[:10]:
+            img = toimage(X_train[idx])
             plt.subplot(10, 10, pos)
             plt.imshow(img)
             plt.axis('off')
